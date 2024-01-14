@@ -15,9 +15,9 @@ en: &DEFAULT_EN
       section: about
     - title: "Timeline"
       section: timeline
-    - title: "Game Project"
+    - title: "Game"
       section: games
-    - title: "Graphics & Animation"
+    - title: "Graphics"
       section: tech
     - title: "Research"
       section: research

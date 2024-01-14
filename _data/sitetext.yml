@@ -11,73 +11,64 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Welcome to my page!
-    text: Xiaoyue Ma (Caballo)
+    title: Xiaoyue Ma (Caballo)
+    text: Welcome to my page!
     button: Know Me More
     buttonlink: "#about"
 
-  services:
-    title: "Services"
-    text: "Lorem ipsum"
-    section: games
-    list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Your description here, full **Markdown** support"
-        icon: fab fa-markdown
-
-  portfolio:
-    title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    section: tech
-    closebutton: "Close Project"
-
-    portfolio:
-    title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    section: research
-    closebutton: "Close Project"
+  about:
+  title: "About me"
+  body: "Game Development, Game Design, Photograph, Boxing, Film, Guitar"
+  section: about
 
   timeline:
-    title: "Timeline"
-    text: "Lorem ipsum timeline"
+    title: "Experience Timeline"
     section: timeline
     # left is the default
     #start_align: "left"
     events:
-      - title: "Our Humble Beginnings"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+      - title: "XTJLU - XLAB"
+        year: "Oct 2019"
+        desc: "Join the X-Lab in my sophomore, responsible for HCI related demo development, experiment design, literature review, paper writing."
         image: assets/img/timeline/1.jpg
         alt:
-      - title: "An Agency is Born"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+      - title: "Empathy Computing Lab"
+        year: "March 2021"
+        desc: "Join the ECL in my Junoir, responsible for VR demo development, experiment design."
         image: assets/img/timeline/2.jpg
         alt:
-      - title: "Jekyll Theme is created"
-        year: "2019"
-        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
+      - title: "Seasun Game"
+        year: "July 2021"
+        desc: "Gameplay Programmer Intern"
         image: assets/img/timeline/3.jpg
         alt: image alt text
-      - title: "Title"
-        year: "2009-2011"
-        desc: "Your description here, **Markdown** is fully supported."
+      - title: "Netease Game"
+        year: "May 2023"
+        desc: "Gameplay Programmer Intern"
         image: assets/img/timeline/4.jpg
         alt:
         # you can enforce the alignment
         align: right
-    end: "Be Part <br> of Our <br> Story!"
+    end: "Live Vividly!"
 
-  about:
-    title: "About me"
-    body: "Game Development, Game Design, Photograph, Boxing, Film, Guitar"
-    section: about
+    Game:
+    title: "Game Project"
+    section: game
+    closebutton: "Close Project"
+
+    Tech:
+    title: "Graphics & Animation"
+    section: tech
+    closebutton: "Close Project"
+
+    Research:
+    title: "Research"
+    section: research
+    closebutton: "Close Project"
+
+  
+
+
 
   clients:
     section: clients
