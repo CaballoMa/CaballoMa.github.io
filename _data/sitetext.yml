@@ -18,6 +18,7 @@ en: &DEFAULT_EN
 
   about:
   title: "About me"
+  text: ""
   body: "Game Development, Game Design, Photograph, Boxing, Film, Guitar"
   section: about
 
@@ -52,19 +53,22 @@ en: &DEFAULT_EN
     end: "Live Vividly!"
 
     Game:
-    title: "Game Project"
-    section: game
-    closebutton: "Close Project"
+      title: "Game Project"
+      text: ""
+      section: game
+      closebutton: "Close Project"
 
     Tech:
-    title: "Graphics & Animation"
-    section: tech
-    closebutton: "Close Project"
+      title: "Graphics & Animation"
+      text: ""
+      section: tech
+      closebutton: "Close Project"
 
     Research:
-    title: "Research"
-    section: research
-    closebutton: "Close Project"
+      title: "Research"
+      text: ""
+      section: research
+      closebutton: "Close Project"
 
   
 
