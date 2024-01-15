@@ -18,7 +18,7 @@ en: &DEFAULT_EN
 
   about:
   title: "About me"
-  text: ""
+  text: "Game Development, Game Design, Photograph, Boxing, Film, Guitar"
   body: "Game Development, Game Design, Photograph, Boxing, Film, Guitar"
   section: about
 
