@@ -18,8 +18,8 @@ en: &DEFAULT_EN
 
   about:
   title: "About me"
-  text: "Game Development, Game Design, Photograph, Boxing, Film, Guitar"
-  body: "Game Development, Game Design, Photograph, Boxing, Film, Guitar"
+  text: "Game Development (Animation, Gameplay, Graphics, System), Game Design, Photograph, Boxing, Film, Guitar, I also have a cat!"
+  body: ""
   section: about
 
   timeline:
@@ -96,7 +96,7 @@ en: &DEFAULT_EN
     title: "Contact me"
     section: contact
     email: "Email*"
-    email-validation: "caballoma.xiaoyue@gmail.com"
+    email-validation: ""
 
   footer:
     social:
