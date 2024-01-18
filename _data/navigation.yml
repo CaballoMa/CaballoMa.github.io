@@ -21,6 +21,8 @@ en: &DEFAULT_EN
       section: tech
     - title: "Research"
       section: research
+    - title: "Photograph"
+      section: photo
     - title: "Contact"
       section: contact
     - title: "Resume"

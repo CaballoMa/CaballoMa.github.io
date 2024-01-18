@@ -54,21 +54,27 @@ en: &DEFAULT_EN
 
     Game:
       title: "Game Project"
-      text: ""
+      text: "Game Project"
       section: game
-      closebutton: "Close Project"
+      closebutton: "Close"
 
     Tech:
       title: "Graphics & Animation"
-      text: ""
+      text: "Graphics & Animation"
       section: tech
-      closebutton: "Close Project"
+      closebutton: "Close"
 
     Research:
       title: "Research"
-      text: ""
+      text: "Research"
       section: research
-      closebutton: "Close Project"
+      closebutton: "Close"
+    
+    Photo:
+      title: "Photograph & Life"
+      text: "Photograph & Life"
+      section: photo
+      closebutton: "Close"
 
   
 
