@@ -40,12 +40,12 @@ en: &DEFAULT_EN
         alt:
       - title: "Seasun Game"
         year: "July 2021"
-        desc: "Gameplay Programmer Intern: Responsible for the development of \textbf{Gameplay} and \textbf{character animation} performance using \textbf{Unity/C\#} and \textbf{Lua}. Focused on refining the construction of animation behavior trees and developing robust, reusable behavior tree nodes."
+        desc: "Gameplay Programmer Intern: Responsible for the development of Gameplay and character animation performance using Unity/C# and Lua. Focused on refining the construction of animation behavior trees and developing robust, reusable behavior tree nodes."
         image: assets/img/timeline/3.jpg
         alt: image alt text
       - title: "Netease Game"
         year: "May 2023"
-        desc: "Gameplay Programmer Intern: Responsible for the development of \textbf{Gameplay and animation}-related content using \textbf{Unreal Engine} and \textbf{C++}, assisted in optimizing Motionmatching search, enhanced the quality of character interaction animations, and automated the marking process for the climbing system."
+        desc: "Gameplay Programmer Intern: Responsible for the development of Gameplay and animation-related content using Unreal Engine and C++, assisted in optimizing Motionmatching search, enhanced the quality of character interaction animations, and automated the marking process for the climbing system."
         image: assets/img/timeline/4.jpg
         alt:
         # you can enforce the alignment
