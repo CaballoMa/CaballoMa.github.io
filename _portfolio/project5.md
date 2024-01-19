@@ -6,7 +6,6 @@ image: assets/img/portfolio/mc.jpg
 caption: #what displays in the portfolio grid:
   title: Mini-Minecraft
   subtitle: Implement Basic Minecraft with C++ and OpenGL
-  link: [https://github.com/CaballoMa/Minecraft](https://github.com/CaballoMa/Minecraft)
   thumbnail: assets/img/portfolio/mc.jpg
 ---
 
@@ -51,7 +50,9 @@ This is a very classic method to generating shadows in games. In this project I 
 Difficulty:
 I found it a little difficult to find a correct bias and near/far plan number, so it takes me a long time to adjust in order to create better shadows.
 
-![](../assets/img/portfolio/screenshot1.gif)
+<p align="center">
+  <img width="650" height="400" src="../assets/img/portfolio/screenshot1.gif" alt="shadowmap">
+</p>
 
 ### Weahter, Procedurally placed assets, Water waves, Post-process Camera Overlay, Distance fog
 
@@ -59,13 +60,17 @@ I found it a little difficult to find a correct bias and near/far plan number, s
 
 I implemented two different weather systems: rain and snow (triggered by the K and L keys in the demo): 
 
-![](../assets/img/portfolio/screenshot6.gif)
+<p align="center">
+  <img width="650" height="400" src="../assets/img/portfolio/screenshot6.gif" alt="weather">
+</p>
 
 #### Water waves:
 
 I change the position of the water wave vertex Y by the sin function:
 
-![](../assets/img/portfolio/screenshot3.gif)
+<p align="center">
+  <img width="650" height="400" src="../assets/img/portfolio/screenshot3.gif" alt="waterwave">
+</p>
 
 #### Post-process Camera Overlay:
 
@@ -74,14 +79,20 @@ I change the position of the water wave vertex Y by the sin function:
 
 ##### **Water:**
 
-![](../assets/img/portfolio/screenshot4.gif)
+<p align="center">
+  <img width="650" height="400" src="../assets/img/portfolio/screenshot4.gif" alt="underwater">
+</p>
 
 ##### **Lava:**
 
-![](../assets/img/portfolio/screenshot5.gif)
+<p align="center">
+  <img width="650" height="400" src="../assets/img/portfolio/screenshot5.gif" alt="underlava">
+</p>
 
 #### Distance fog:
 
 Pass in the current position of the player through the shaderprogram. Linear interpolation is performed between the original color of each pixel and the color of the fog, depending on the distance of the object from the player.
 
-![](../assets/img/portfolio/screenshot7.png)
+<p align="center">
+  <img width="650" height="400" src="../assets/img/portfolio/screenshot7.png" alt="fog">
+</p>
