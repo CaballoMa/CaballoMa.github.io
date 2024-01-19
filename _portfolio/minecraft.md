@@ -6,6 +6,7 @@ image: assets/img/portfolio/mc.jpg
 caption: #what displays in the portfolio grid:
   title: Mini-Minecraft
   subtitle: Implement Basic Minecraft with C++ and OpenGL
+  link: [https://github.com/CaballoMa/Minecraft](https://github.com/CaballoMa/Minecraft)
   thumbnail: assets/img/portfolio/mc.jpg
 ---
 
@@ -18,7 +19,6 @@ m_velocity += glm::normalize(m_forward)    * m_acceleration.z * dT
                + glm::normalize(m_right)   * m_acceleration.x * dT
                + glm::normalize(m_up)      * m_acceleration.y * dT;
 ``` 
-When player isnt flying, we ignore the up velocity, and then also add gravity to it. For collision detection, I used the ```gridMarch``` function given on the slide, and check whether any one from the 12 vertices intersect with a block, and then stop that direction movement. One difficulty here is to correctly detect the min of all vertices, and another is to correctly implement the jump function so that the player can't do infinite jumping.
 
 I also implemented delete and create block function, which is done in the moveclick event.Everytime the mouse click, I do a raycast from the camera and check whether it hit something within 3 units. If it does, set that block's type to Empty.
 
@@ -35,9 +35,6 @@ I also implemented delete and create block function, which is done in the movecl
 #### SHADERPROGRAM:
 1. Implemented a second drawing function drawInterleave() for the ShaderProgram class, to render a Drawable with an interleaved VBO set.
 
-#### DIFFICULTY:
-After I changed the rendering of each block to rendering each Chunk, the position of the scene object was always wrong, and I checked the various data in Chunk.cpp for a long time without finding any problem. Finally I found out that the matrix parameter was not passed in the instance's shader, and the position was correct after using Lambert's shader instead lol.
-
 ### Texture and Texture Animation
 
 I finished the texture pipeline, and also some simple texture animation on water and lava. I also implemented opaque and transparent rendering so that after enabling GL_BLEND all textures are rendered correctly.
@@ -45,8 +42,6 @@ I finished the texture pipeline, and also some simple texture animation on water
 ### Muti-Thread
 
 I implemented a multi-threaded chunked rendering. First, I locate the player's zone by the current player position, then I compare the player's zone in the previous frame with the zone in this frame to find the chunks that do not need to be rendered, and destroy the vbo data of these chunks. After that, I decide if I need to create chunks for this zone by determining if the zone was created before, and then store these chunks in the newChunkMap if required. By iterating through the newChunkMap, I create a blockTypeWorker for each new chunk and create an additional thread to initialize the block data in the chunk. After initializing the chunk, store it in the blockTypeMap. Iterate through the blockTypeMap, creating a VBOWorker for each chunk and creating an extra thread to initialize the chunk's VBO data. Finally, after loading the VBO data, the chunk binds the VBO data to the GPU uniformly. In addition, a thread mutex is needed for each Map operation.
-
-The implementation of this part can be optimized and improved: In blocktypeworker, each time before initializing the block data of a chunk, you can determine whether the chunk needs to be rendered in the current frame.If the chunk does not need to be rendered, the chunk should be skipped. In VBOworker, it is also necessary to determine whether the chunk needs to be rendered in the current frame and do the same. The premise is to determine directly which chunks need to be rendered based on the player's location and store those chunks in the container. (my approach is to render chunks by determining the zone)
 
 
 ### Shadow Mapping
@@ -56,27 +51,21 @@ This is a very classic method to generating shadows in games. In this project I 
 Difficulty:
 I found it a little difficult to find a correct bias and near/far plan number, so it takes me a long time to adjust in order to create better shadows.
 
-![](screenshot1.gif)
+![](../assets/img/portfolio/screenshot1.gif)
 
 ### Weahter, Procedurally placed assets, Water waves, Post-process Camera Overlay, Distance fog
 
 #### Weahter:
 
-I implemented two different weather systems: rain and snow (triggered by the K and L keys in the demo): A certain number of particles are initialized depending on the player's position when the weather is created at the beginning. The speed of the snowflakes is assigned by the noise function and the time. The rain is moving vertically downward, and when it falls to the ground it will return to the initialized position and fall in a cycle. This allows the rain particles to be reused to reduce the performance consumption.
+I implemented two different weather systems: rain and snow (triggered by the K and L keys in the demo): 
 
-![](screenshot6.gif)
-
-#### Procedurally placed assets:
-
-I implemented functions to draw different plants in chunk and called these functions when initializing blocks: Different plants are created by determining the current block type and the altitude of the block. The noise function is used to make the generation of plants more random and reasonable.
-
-![](screenshot2.gif)
+![](../assets/img/portfolio/screenshot6.gif)
 
 #### Water waves:
 
-I change the position of the water wave vertex Y by the sin function. To prevent the water waves from looking neatly waved, I pass the UV value of the vertex into the noise function as an argument to get a messy undulation of the water waves. In addition, I recalculate the normals based on the Y values of the water wave vertices. Then, I implemented the water reflection model of blinn phong.
+I change the position of the water wave vertex Y by the sin function:
 
-![](screenshot3.gif)
+![](../assets/img/portfolio/screenshot3.gif)
 
 #### Post-process Camera Overlay:
 
@@ -85,14 +74,14 @@ I change the position of the water wave vertex Y by the sin function. To prevent
 
 ##### **Water:**
 
-![](screenshot4.gif)
+![](../assets/img/portfolio/screenshot4.gif)
 
 ##### **Lava:**
 
-![](screenshot5.gif)
+![](../assets/img/portfolio/screenshot5.gif)
 
 #### Distance fog:
 
 Pass in the current position of the player through the shaderprogram. Linear interpolation is performed between the original color of each pixel and the color of the fog, depending on the distance of the object from the player.
 
-![](screenshot7.png)
+![](../assets/img/portfolio/screenshot7.png)
