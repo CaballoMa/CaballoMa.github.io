@@ -6,7 +6,6 @@ image: assets/img/portfolio/mc.jpg
 caption: #what displays in the portfolio grid:
   title: Mini-Minecraft
   subtitle: Implement Basic Minecraft with C++ and OpenGL
-  link: [https://github.com/CaballoMa/Minecraft](https://github.com/CaballoMa/Minecraft)
   thumbnail: assets/img/portfolio/mc.jpg
 ---
 
