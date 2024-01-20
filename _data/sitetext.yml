@@ -56,29 +56,29 @@ en: &DEFAULT_EN
         align: right
     end: "Live Vividly!"
 
-    Game:
-      title: "Game Project"
-      text: "Game Project"
-      section: game
+    Projects:
+      title: "Project"
+      text: "Game & Tech & Research Projects"
+      section: projects
       closebutton: "Close"
 
-    Tech:
-      title: "Graphics & Animation"
-      text: "Graphics & Animation"
-      section: tech
-      closebutton: "Close"
+    # Tech:
+    #   title: "Graphics & Animation"
+    #   text: "Graphics & Animation"
+    #   section: tech
+    #   closebutton: "Close"
 
-    Research:
-      title: "Research"
-      text: "Research"
-      section: research
-      closebutton: "Close"
+    # Research:
+    #   title: "Research"
+    #   text: "Research"
+    #   section: research
+    #   closebutton: "Close"
     
-    Photo:
-      title: "Photograph & Life"
-      text: "Photograph & Life"
-      section: photo
-      closebutton: "Close"
+    # Photo:
+    #   title: "Photograph & Life"
+    #   text: "Photograph & Life"
+    #   section: photo
+    #   closebutton: "Close"
 
   
 
