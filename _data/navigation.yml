@@ -16,7 +16,7 @@ en: &DEFAULT_EN
     - title: "Timeline"
       section: timeline
     - title: "Project"
-      section: projects
+      section: portfolio
     - title: "Resume"
       url: https://drive.google.com/file/d/1_VBj9lLcAMTagw4usjyQUtSYZaJmn-0-/view?usp=sharing
 en-US:
