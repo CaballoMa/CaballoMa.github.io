@@ -56,11 +56,11 @@ en: &DEFAULT_EN
         align: right
     end: "Live Vividly!"
 
-    Projects:
-      title: "Project"
-      text: "Game & Tech & Research Projects"
-      section: projects
-      closebutton: "Close"
+    portfolio:
+    title: "Portfolio"
+    text: "Game & Tech & Research Projects"
+    section: projects
+    closebutton: "Close"
 
     # Tech:
     #   title: "Graphics & Animation"
