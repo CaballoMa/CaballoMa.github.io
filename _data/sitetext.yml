@@ -62,16 +62,16 @@ en: &DEFAULT_EN
     section: projects
     closebutton: "Close"
 
-  Game:
+  portfolio2:
     title: "Portfolio2"
     text: "Game & Tech & Research Projects"
     section: projects2
     closebutton: "Close"
 
-  Tech:
+  portfolio2:
     title: "Portfolio3"
     text: "Game & Tech & Research Projects"
-    section: projects3
+    section: projects2
     closebutton: "Close"
     # Tech:
     #   title: "Graphics & Animation"
