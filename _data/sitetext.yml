@@ -56,7 +56,7 @@ en: &DEFAULT_EN
         align: right
     end: "Live Vividly!"
 
-    portfolio:
+  portfolio:
     title: "Portfolio"
     text: "Game & Tech & Research Projects"
     section: projects
