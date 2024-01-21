@@ -79,23 +79,6 @@ en: &DEFAULT_EN
     text: "Life pieces"
     section: portfolio4
     closebutton: "Close"
-    # Tech:
-    #   title: "Graphics & Animation"
-    #   text: "Graphics & Animation"
-    #   section: tech
-    #   closebutton: "Close"
-
-    # Research:
-    #   title: "Research"
-    #   text: "Research"
-    #   section: research
-    #   closebutton: "Close"
-    
-    # Photo:
-    #   title: "Photograph & Life"
-    #   text: "Photograph & Life"
-    #   section: photo
-    #   closebutton: "Close"
 
   
 
