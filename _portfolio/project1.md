@@ -1,7 +1,7 @@
 ---
 title: Floating Otter
 subtitle: 3D narrative indie game
-image: assets/img/portfolio/otter.jpg
+image: assets/img/portfolio/otter2.jpg
 
 caption: #what displays in the portfolio grid:
   title: Floating Otter
