@@ -26,6 +26,6 @@ This is a 2D projection art interactive game about the story of Chinese folklore
 
 ### Gameplay
 
-<video width="650" height="400" id="video" controls="" preload="none" poster="planet"> 
+<video width="650" height="400" id="video" controls="" preload="none" poster="xihu"> 
       <source id="mp4" src="../assets/video/xihu.mp4" type="video/mp4">
 </videos>
