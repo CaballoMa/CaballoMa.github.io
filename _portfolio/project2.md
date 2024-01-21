@@ -1,12 +1,12 @@
 ---
 title: Party Planet
 subtitle: An online asymmetric party game
-image: assets/img/portfolio/planet2.jpg
+image: assets/img/portfolio/planet.jpg
 
 caption: #what displays in the portfolio grid:
   title: Party Planet
   subtitle: An online asymmetric party game
-  thumbnail: assets/img/portfolio/planet.jpg
+  thumbnail: assets/img/portfolio/planet2.jpg
 ---
 
 ### Intro
