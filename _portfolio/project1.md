@@ -4,9 +4,9 @@ subtitle: 3D narrative indie game
 image: assets/img/portfolio/otter.jpg
 
 caption: #what displays in the portfolio grid:
-  title: Mini-Minecraft
-  subtitle: Implement Basic Minecraft with C++ and OpenGL
-  thumbnail: assets/img/portfolio/mc.jpg
+  title: Floating Otter
+  subtitle: 3D narrative indie game
+  thumbnail: assets/img/portfolio/otter.jpg
 ---
 
 ### Intro
@@ -20,4 +20,6 @@ As a baby sea otter, the player goes through a difficult journey to meet new fri
 
 ### Gameplay
 
-![](../assets/img/portfolio/otter.gif)
+<p align="center">
+  <img width="650" height="400" src="../assets/img/portfolio/otter.gif" alt="underlava">
+</p>
