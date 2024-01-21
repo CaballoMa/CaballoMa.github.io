@@ -1,12 +1,12 @@
 ---
 title: Mr.Summer
 subtitle: A 2D side-scrolling stealth game
-image: assets/img/portfolio/summer.png
+image: assets/img/portfolio/summer2.png
 
 caption: #what displays in the portfolio grid:
   title: Mr.Summer
   subtitle: A 2D side-scrolling stealth game
-  thumbnail: assets/img/portfolio/summper2.png
+  thumbnail: assets/img/portfolio/summer.png
 ---
 
 ### Intro
