@@ -11,7 +11,7 @@ caption: #what displays in the portfolio grid:
 
 ### Intro
 
-As a baby sea otter, the player goes through a difficult journey to meet new friends and finally find his lost mother.
+As a baby sea otter, the player goes through a difficult journey to meet new animal friends and finally find his lost mother.
 
 
 
@@ -20,6 +20,6 @@ As a baby sea otter, the player goes through a difficult journey to meet new fri
 
 ### Gameplay
 
-<p align="center">
-  <img width="650" height="400" src="../assets/img/portfolio/otter.gif" alt="underlava">
-</p>
+<video width="650" height="400" id="video" controls="" preload="none" poster="Otter"> 
+      <source id="mp4" src="../assets/video/otter.mp4" type="video/mp4">
+</videos>
