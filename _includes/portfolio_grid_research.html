@@ -11,7 +11,7 @@
     <div class="row">
 	{% for project in site.portfolio3 %}
       <div class="col-md-4 col-sm-6 portfolio3-item">
-        <a class="portfolio3-link" data-toggle="modal3" href="#p{{ forloop.index }}">
+        <a class="portfolio3-link" data-toggle="modal" href="#p{{ forloop.index }}">
           <div class="portfolio3-hover">
             <div class="portfolio3-hover-content">
               <i class="{{ site.data.style.portfolio3-icon | default: "fas fa-plus fa-3x" }}"></i>
@@ -40,7 +40,7 @@
     <div class="row">
 	{% for project in site.portfolio3 %}
       <div class="col-md-4 col-sm-6 portfolio3-item">
-        <a class="portfolio3-link" data-toggle="modal3" href="#p{{ forloop.index }}">
+        <a class="portfolio3-link" data-toggle="modal" href="#p{{ forloop.index }}">
           <div class="portfolio3-hover">
             <div class="portfolio3-hover-content">
               <i class="{{ site.data.style.portfolio3-icon | default: "fas fa-plus fa-3x" }}"></i>
