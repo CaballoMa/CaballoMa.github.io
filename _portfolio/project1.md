@@ -11,6 +11,8 @@ caption: #what displays in the portfolio grid:
 
 ### Intro
 
+Floating Otter is a 3D casual single player game in which the player takes on the role of a sea otter as it goes about its daily activities of feeding, cleaning and sleeping in the water. The game reflects the sea otter's cute habits through different interactions and actions.
+
 As a baby sea otter, the player goes through a difficult journey to meet new animal friends and finally find his lost mother.
 
 
