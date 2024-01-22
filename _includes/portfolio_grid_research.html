@@ -1,10 +1,10 @@
 <!-- Portfolio Grid -->
 {% if site.locale and site.locale != "" and site.locale != nil %}
-<section class="bg-light page-section" id="{{ site.data.sitetext.portfolio3.section | default: "portfolio3" }}">
+<section class="bg-light page-section" id="{{ site.data.sitetext.portfolio3.section | default: "portfolio" }}">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].portfolio3.title | markdownify | default: "Portfolio3" }}</h2>
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].portfolio3.title | markdownify | default: "Portfolio" }}</h2>
         <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].portfolio3.text | markdownify }}</h3>
       </div>
     </div>
@@ -29,11 +29,11 @@
   </div>
 </section>
 {% else %}
-<section class="bg-light page-section" id="{{ site.data.sitetext.portfolio3.section | default: "portfolio3" }}">
+<section class="bg-light page-section" id="{{ site.data.sitetext.portfolio3.section | default: "portfolio" }}">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">{{ site.data.sitetext.portfolio3.title | markdownify | default: "Portfolio3" }}</h2>
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext.portfolio3.title | markdownify | default: "Portfolio" }}</h2>
         <h3 class="section-subheading text-muted">{{ site.data.sitetext.portfolio3.text | markdownify }}</h3>
       </div>
     </div>
