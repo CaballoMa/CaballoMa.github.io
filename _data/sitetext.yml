@@ -79,35 +79,7 @@ en: &DEFAULT_EN
     text: "Life pieces"
     section: portfolio4
     closebutton: "Close"
-
-  
-
-
-
-  # clients:
-  #   section: clients
-  #   max-height: 100px
-  #   horizontal-scrolling: "" #"yes/no"
-  #   list:
-  #     - title: "envato"
-  #       url: https://github.com/raviriley/agency-jekyll-theme
-  #       logo: assets/img/clients/envato.jpg
-  #     - title: "designmodo"
-  #       url: https://github.com/raviriley/agency-jekyll-theme
-  #       logo: assets/img/clients/designmodo.jpg
-  #     - title: "themeforest"
-  #       url: https://github.com/raviriley/agency-jekyll-theme
-  #       logo: assets/img/clients/themeforest.jpg
-  #     - title: "Creative Market"
-  #       url: https://github.com/raviriley/agency-jekyll-theme
-  #       logo: assets/img/clients/creative-market.jpg
-
-  contact:
-    title: "Contact me"
-    section: contact
-    email: "Email*"
-    email-validation: ""
-
+    
   footer:
     social:
       - url: https://www.linkedin.com/in/xiaoyue-ma/
