@@ -1,12 +1,12 @@
 ---
 title: CUDA Path Tracer
 subtitle: CUDA-enabled GPU for rapid path tracing
-image: assets/img/portfolio/565hw3.png
+image: assets/img/portfolio/565hw3_1.png
 
 caption: #what displays in the portfolio grid:
   title: CUDA Path Tracer
   subtitle: CUDA-enabled GPU for rapid path tracing
-  thumbnail: assets/img/portfolio/565hw2.png
+  thumbnail: assets/img/portfolio/565hw3_2.png
 ---
 
 ### Intro
