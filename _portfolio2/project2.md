@@ -28,131 +28,139 @@ The diffuse BSDF provides a surface with a matte appearance. It uses cosine-weig
 
 A perfectly specular surface reflects rays at the same angle as they arrive, imparting a mirror-like appearance to the surface. The function 'glm::reflect' is utilized to produce this perfectly reflected ray. 
 
-![](../assets/img/portfolio/spec.png)
+<p align="center">
+  <img width="650" height="400" src="../assets/img/portfolio/spec.png" alt="spec">
+</p>
 
-
-![](../assets/img/portfolio/reflective.png)
+<p align="center">
+  <img width="650" height="400" src="../assets/img/portfolio/reflective.png" alt="reflection">
+</p>
 
 ### <a name="imperf-specular">Imperfect Specular Reflective</a>   
 
 In path tracing, both perfect and imperfect specular surfaces are simulated using probability distributions from [GPU Gems 3, Chapter 20](https://developer.nvidia.com/gpugems/gpugems3/part-iii-rendering/chapter-20-gpu-based-importance-sampling). Imperfect surfaces blend perfect specular and diffuse reflections for a more natural metallic look.
 
-|Perfect Specular|IOR 0.3|IOR 0.5|
-|---|---|---|
-| ![](../assets/img/portfolio/perfect.png)|![](../assets/img/portfolio/ip1.png) |![](../assets/img/portfolio/ip2.png)
+#### Perfect Specular
 
-## <a name="stream_compaction_term">Path Termination by Stream Compaction</a>
-
-```
-#if STREAM_COMPACTION
-	PathSegment* path_end = thrust::stable_partition(thrust::device, dev_paths, dev_paths + num_paths, isPathCompleted());
-	num_paths = path_end - dev_paths;
-	iterationComplete = (num_paths == 0);
-#endif
-
-struct isPathCompleted
-{
-    __host__ __device__ bool operator()(const PathSegment& pathSegment) {
-    	return pathSegment.remainingBounces > 0;
-    }
-};
-```
+<p align="center">
+  <img width="450" height="400" src="../assets/img/portfolio/perfect.png" alt="reflection">
+</p>
 
 
-## <a name="ray_sorting">Sorting Rays</a>
+#### IOR 0.3
 
-```
-#if SORT_MATERIAL
-	thrust::sort_by_key(thrust::device, dev_intersections, dev_intersections + num_paths, dev_paths, dev_materialIds());
-#endif
+<p align="center">
+  <img width="450" height="400" src="../assets/img/portfolio/ip1.png" alt="reflection">
+</p>
 
-struct dev_materialIds
-{
-    __host__ __device__ bool operator()(const ShadeableIntersection& intersect1, const ShadeableIntersection& intersect2)
-    {
-    	return intersect1.materialId < intersect2.materialId;
-    }
-};
 
-```
+#### IOR 0.5|
 
-## <a name="cache">Caching the First Bounce Intersections   </a>
-
-```
-#if	CACHE_FIRST_BOUNCE && ! ANTI_ALIASING
-	if (iter > 1) {
-		cudaMemcpy(dev_intersections, dev_cache_intersections, pixelcount * sizeof(ShadeableIntersection), cudaMemcpyDeviceToDevice);
-	}
-		
-#endif
-	computeIntersections << <numblocksPathSegmentTracing, blockSize1d >> > (
-		depth
-		, num_paths
-		, dev_paths
-		, dev_geoms
-		, hst_scene->geoms.size()
-		, dev_intersections
-		, dev_triangles
-		, dev_bvh_nodes
-		);
-
-#if CACHE_FIRST_BOUNCE && ! ANTI_ALIASING
-	if (iter == 1)
-	{
-		cudaMemcpy(dev_cache_intersections, dev_intersections,
-			pixelcount * sizeof(ShadeableIntersection), cudaMemcpyDeviceToDevice);
-	}
-#endif
-
-```
+<p align="center">
+  <img width="450" height="400" src="../assets/img/portfolio/ip2.png" alt="reflection">
+</p>
 
 ## <a name="refract">Refraction</a>
 The images utilize Schlick's approximation to achieve refraction effects. The results incorporate the function glm::refract, based on Snell's law, to determine the direction of the refracted ray.  
  
-|IOR 1.33|IOR 1.77|IOR 2.42|
-|---|---|---|
-| ![](../assets/img/portfolio/refractive1.png)|![](../assets/img/portfolio/refractive2.png) |![](../assets/img/portfolio/refractive3.png)
+#### IOR 1.33
+
+<p align="center">
+  <img width="450" height="400" src="../assets/img/portfolio/refractive1.png" alt="reflection">
+</p>
+
+#### IOR 1.77
+
+<p align="center">
+  <img width="450" height="400" src="../assets/img/portfolio/refractive2.png" alt="reflection">
+</p>
+
+#### IOR 2.42|
+
+<p align="center">
+  <img width="450" height="400" src="../assets/img/portfolio/refractive3.png" alt="reflection">
+</p>
 
 ## <a name="dof">Depth of Field</a>
 In path tracing, Depth of Field is achieved by jittering rays within an aperture, mirroring the real-world function of a lens. This introduces noise to rays that strike objects at the focal length, resulting in a blurry effect. According to [PBRT 6.2.3](https://pbr-book.org/3ed-2018/Camera_Models/Projective_Camera_Models): 
 
-![](../assets/img/portfolio/dof.png)
+<p align="center">
+  <img width="750" height="400" src="../assets/img/portfolio/dof.png" alt="reflection">
+</p>
 
 ## <a name="ssaa">Stochastic Sampled Anti-aliasing</a>
 
-|Without Antialiasing| With Antialiasing|
-|---|--|
-|![](../assets/img/portfolio/noaa.png) |![](../assets/img/portfolio/aa.png) | 
+#### Without Antialiasing
+
+<p align="center">
+  <img width="450" height="400" src="../assets/img/portfolio/noaa.png" alt="reflection">
+</p>
+
+#### With Antialiasing|
+
+<p align="center">
+  <img width="450" height="400" src="../assets/img/portfolio/aa.png" alt="reflection">
+</p>
 
 ## <a name="mesh">Obj & Mesh Loading</a>
 Utilizing the [tinyObjLoader](https://github.com/tinyobjloader/tinyobjloader), it parses the .obj file's data to assemble scene triangles using vertex, face, normal, and texture information. Before rendering the mesh through ray-triangle intersections, it first performs bounding volume intersection culling by examining rays against a volume encompassing the entire mesh.     
 <p align="center">
-  <img width="960" height=840" src="../assets/img/portfolio/mesh1.png" alt="Mesh">
+  <img width="460" height=400" src="../assets/img/portfolio/mesh1.png" alt="Mesh">
 </p> 
 
 <p align="center">
-  <img width="960" height="840" src="../assets/img/portfolio/mesh2.png" alt="Mesh">
+  <img width="460" height="400" src="../assets/img/portfolio/mesh2.png" alt="Mesh">
 </p> 
 
 ## <a name="texture">Texture mapping & Procedural texture </a>
 
-![](../assets/img/portfolio/texture1.png)
+<p align="center">
+  <img width="750" height="400" src="../assets/img/portfolio/texture1.png" alt="reflection">
+</p>
 
-![](../assets/img/portfolio/texture2.png)
+<p align="center">
+  <img width="750" height="400" src="../assets/img/portfolio/texture2.png" alt="reflection">
+</p>
+
 
 ## <a name="directlighting">Direct Lighting</a>
 
-|Without the Direct Light|Direct Light in the last bounce|Direct Light in penultimate bounce|
-|---|---|---|
-|![](../assets/img/portfolio/nodlight.png) |![](../assets/img/portfolio/dlight1.png) |![](../assets/img/portfolio/dlight2.png)
+#### Without the Direct Light
+
+<p align="center">
+  <img width="400" height="400" src="../assets/img/portfolio/nodlight.png" alt="reflection">
+</p>
+
+#### Direct Light in the last bounce
+
+<p align="center">
+  <img width="400" height="400" src="../assets/img/portfolio/dlight1.png" alt="reflection">
+</p>
+
+#### Direct Light in penultimate bounce|
+
+<p align="center">
+  <img width="400" height="400" src="../assets/img/portfolio/dlight2.png" alt="reflection">
+</p>
 
 ## <a name="bssrdf">Subsurface scattering </a>
 
-|BSSRDF without Texture|BSSRDF with Texture|
-|---|---|
-|![](../assets/img/portfolio/bssrdfNT.png)|![](../assets/img/portfolio/bssrdf.png)|
+#### BSSRDF without Texture
 
-![](../assets/img/portfolio/bssrdf2.png)
+<p align="center">
+  <img width="400" height="400" src="../assets/img/portfolio/bssrdfNT.png" alt="reflection">
+</p>
+
+
+#### BSSRDF with Texture|
+
+<p align="center">
+  <img width="400" height="400" src="../assets/img/portfolio/bssrdf.png" alt="reflection">
+</p>
+
+<p align="center">
+  <img width="650" height="400" src="../assets/img/portfolio/bssrdf2.png" alt="reflection">
+</p>
 
 ## <a name="bvh">Bounding Volume Hierarchy </a>
 
