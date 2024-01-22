@@ -22,7 +22,9 @@ This project harnesses the power of CUDA-enabled GPU for rapid path tracing, gen
    
 The diffuse BSDF provides a surface with a matte appearance. It uses cosine-weighted sampling at the points where rays intersect the surface to decide the direction of subsequent rays and then evaluates these rays as they emanate from the surface.
 
-![](../assets/img/portfolio/diffuse.png)
+<p align="center">
+  <img width="700" height="400" src="../assets/img/portfolio/diffuse.png" alt="diffuse">
+</p>
 
 ### <a name="perf_specular"> Perfectly Specular Reflective</a>   
 
