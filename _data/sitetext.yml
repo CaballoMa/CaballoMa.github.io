@@ -28,32 +28,30 @@ en: &DEFAULT_EN
     # left is the default
     #start_align: "left"
     events:
-      - title: "Tencent Game"
-        year: "Jan 2024"
-        desc: "Animation Research Engineer Intern: Develop an animation system based on IK, role movement, interactive upper logic transformation"
-        image: assets/img/timeline/5.jpg
+      - title: "XTJLU - XLAB"
+        year: "Oct 2019"
+        desc: "Join the X-Lab in my sophomore, responsible for HCI related demo development, experiment design, literature review, paper writing."
+        image: assets/img/timeline/1.jpg
         alt:
-      - title: "Netease Game"
-        year: "May 2023"
-        desc: "Gameplay Programmer Intern: Responsible for the development of Gameplay and animation-related content using Unreal Engine and C++, assisted in optimizing Motionmatching search, enhanced the quality of character interaction animations, and automated the marking process for the climbing system."
-        image: assets/img/timeline/4.jpg
+      - title: "Empathy Computing Lab"
+        year: "March 2021"
+        desc: "Join the ECL in my Junoir, responsible for VR demo development, experiment design."
+        image: assets/img/timeline/2.jpg
         alt:
       - title: "Seasun Game"
         year: "July 2021"
         desc: "Gameplay Programmer Intern: Responsible for the development of Gameplay and character animation performance using Unity/C# and Lua. Focused on refining the construction of animation behavior trees and developing robust, reusable behavior tree nodes."
         image: assets/img/timeline/3.jpg
         alt: image alt text
-      - title: "Empathy Computing Lab"
-        year: "March 2021"
-        desc: "Join the ECL in my Junoir, responsible for VR demo development, experiment design."
-        image: assets/img/timeline/2.jpg
+      - title: "Netease Game"
+        year: "May 2023"
+        desc: "Gameplay Programmer Intern: Responsible for the development of Gameplay and animation-related content using Unreal Engine and C++, assisted in optimizing Motionmatching search, enhanced the quality of character interaction animations, and automated the marking process for the climbing system."
+        image: assets/img/timeline/4.jpg
+      - title: "Tencent Game"
+        year: "Jan 2024"
+        desc: "Animation Research Engineer Intern: Develop an animation system based on IK, role movement, interactive upper logic transformation"
+        image: assets/img/timeline/5.jpg
         alt:
-       - title: "XTJLU - XLAB"
-        year: "Oct 2019"
-        desc: "Join the X-Lab in my sophomore, responsible for HCI related demo development, experiment design, literature review, paper writing."
-        image: assets/img/timeline/1.jpg
-        alt:
-        
         # you can enforce the alignment
         align: right
     end: "Live Vividly!"
@@ -77,7 +75,7 @@ en: &DEFAULT_EN
     closebutton: "Close"
 
   portfolio4:
-    title: "Photograph & Modeling"
+    title: "Photograph & Life"
     text: "Life pieces"
     section: portfolio4
     closebutton: "Close"
