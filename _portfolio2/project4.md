@@ -1,31 +1,39 @@
 ---
-title: Tears of the West Lake
-subtitle: A projection art interactive game
-image: assets/img/portfolio/xihu1.png
+title: Unity-IKFK-Plugin
+subtitle: A dynamic library Unity plugin for FK/IK systems
+image: assets/img/portfolio/ik1.jpg
 
 caption: #what displays in the portfolio grid:
-  title: Tears of the West Lake
-  subtitle: A projection art interactive game
-  thumbnail: assets/img/portfolio/xihu.png
+  title: Unity-IKFK-Plugin
+  subtitle: A dynamic library Unity plugin for FK/IK systems
+  thumbnail: assets/img/portfolio/ik1.jpg
 ---
 
-### Intro
+## Intro
 
-This is a 2D projection art interactive game about the story of Chinese folklore Madame White Snake, Player can interect with projection by swiping the tablet screen.
+A dynamic library Unity plugin leveraging C++ to provide advanced animation capabilities.Implemented robust FK/IK systems,bone and mesh binding, enhancing realistic bone movement in animations.
 
-[Video Link](https://www.youtube.com/watch?v=uow1KlBxh64)
+## Feature
+* Robust FK/IK systems
+* Limb-based IK
+* CCD IK
+
+## Result
+
+### FK
 
 <p align="center">
-  <img width="650" height="400" src="../assets/img/portfolio/xihu2.png" alt="xihu">
+  <img width="650" height="400" src="../assets/img/portfolio/ik1.gif" alt="mm">
 </p>
+
+### Limb-based IK
 
 <p align="center">
-  <img width="650" height="400" src="../assets/img/portfolio/xihu3.png" alt="xihu">
+  <img width="650" height="400" src="../assets/img/portfolio/ik2.gif" alt="mm">
 </p>
 
+### CCD IK
 
-### Gameplay
-
-<video width="650" height="400" id="video" controls="" preload="none" poster="xihu"> 
-      <source id="mp4" src="../assets/video/xihu.mp4" type="video/mp4">
-</videos>
+<p align="center">
+  <img width="650" height="400" src="../assets/img/portfolio/ik3.gif" alt="mm">
+</p>
