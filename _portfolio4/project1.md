@@ -1,12 +1,12 @@
 ---
 title: 3D Modeling
 subtitle: My modeling works in Maya
-image: assets/img/portfolio/md1.jpg
+image: assets/img/portfolio/md3.jpg
 
 caption: #what displays in the portfolio grid:
   title: 3D Modeling
   subtitle: My modeling works in Maya
-  thumbnail: assets/img/portfolio/md3.jpg
+  thumbnail: assets/img/portfolio/md1.jpg
 ---
 
 ## Anime Character
