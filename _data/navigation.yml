@@ -15,14 +15,8 @@ en: &DEFAULT_EN
       section: about
     - title: "Timeline"
       section: timeline
-    - title: "Game"
+    - title: "Projects"
       section: portfolio
-    - title: "Tech"
-      section: portfolio2
-    - title: "Research"
-      section: portfolio3
-    - title: "Other"
-      section: portfolio4
     - title: "Resume"
       url: https://drive.google.com/file/d/1_VBj9lLcAMTagw4usjyQUtSYZaJmn-0-/view?usp=sharing
 en-US:
