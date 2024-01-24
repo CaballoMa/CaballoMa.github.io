@@ -57,27 +57,9 @@ en: &DEFAULT_EN
     end: "Live Vividly!"
 
   portfolio:
-    title: "Game"
+    title: "Projects"
     text: "Game Projects"
     section: portfolio
-    closebutton: "Close"
-
-  portfolio2:
-    title: "Tech"
-    text: "Graphics & Animation Projects"
-    section: portfolio2
-    closebutton: "Close"
-
-  portfolio3:
-    title: "Research"
-    text: "Research Projects"
-    section: portfolio3
-    closebutton: "Close"
-
-  portfolio4:
-    title: "Photograph & Life"
-    text: "Life pieces"
-    section: portfolio4
     closebutton: "Close"
     
   footer:
